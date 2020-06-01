@@ -1,17 +1,26 @@
-import {INCREMENT,DECREMENT} from './type'
+import {INCREMENT,DECREMENT, TIMES, ID_INC} from './type'
+let idInc = 1
 
-export function increment(){
-
+ function increment(){
     return{
-        type: 'INCREMENT'
+        type: INCREMENT
     }
-    
+}
+ function decrement(){
+    return{
+        type: DECREMENT
+    }
+}
+function idIncrement(){
+    return{
+        type: ID_INC,
+        id: idInc++
+    }
+}
+function newTimes(){
+    return{
+        type: TIMES
+    }
 }
 
-export function decrement(){
-    return{
-        type: 'DECREMENT'
-    }
-    
-
-}
+export{newTimes,increment,decrement,idIncrement}
