@@ -43,9 +43,7 @@ class FirstPage extends Component{
             <View>
                 <Text>{this.state.value}</Text>
         <Text>{this.state.times}</Text>
-                <TextInput
-                
-                />
+               
                 
                 <Button
                     title='Increment'
