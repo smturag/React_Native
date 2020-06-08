@@ -1,4 +1,4 @@
-import {INCREMENT,DECREMENT, TIMES, ID_INC} from './type'
+import {INCREMENT,DECREMENT, TIMES, ID_INC,ADD_NUM} from './type'
 let idInc = 1
 
  function increment(){
@@ -23,4 +23,12 @@ function newTimes(){
     }
 }
 
-export{newTimes,increment,decrement,idIncrement}
+function addNum(Texto){
+    return{
+        type: ADD_NUM,
+        Texto
+
+    }
+}
+
+export{newTimes,increment,decrement,idIncrement,addNum}

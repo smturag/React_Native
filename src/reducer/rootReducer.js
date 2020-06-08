@@ -1,8 +1,9 @@
- import { INCREMENT, DECREMENT, TIMES, ID_INC } from "../action/type";
+ import { INCREMENT, DECREMENT, TIMES, ID_INC, ADD_NUM } from "../action/type";
  const initialState={
      number:1,
      newTimes: new Date().toString(),
-     id:''
+     id:'',
+     InputNum:''
      
  }
 
@@ -20,6 +21,10 @@ const reducer =(state = initialState , action)=>{
 
     case ID_INC:
         return Object.assign({},state,{id: action.id})
+    case ADD_NUM:
+      return Object.assign({},state,{
+          InputNum: action.Texto
+      })
 
       default:
           return state

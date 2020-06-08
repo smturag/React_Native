@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import {increment,decrement,idIncrement} from '../src/action/index'
 import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types';
+import Add_Num from './inputValue'
+import { ADD_NUM } from '../src/action/type'
 
 class FirstPage extends Component{
     static propTypes={
@@ -74,6 +76,8 @@ class FirstPage extends Component{
                 >
                     <Text>Id Increment</Text>
                 </TouchableOpacity>
+
+                <Add_Num/>
 
             </View>
         )
